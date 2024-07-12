@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Avatar from '$lib/components/Avatar.svelte';
+</script>
+
+<div class="mt-4 flex items-center justify-self-auto text-3xl font-semibold">
+	<Avatar />
+	<h1 class="ml-4">Aarsh padia</h1>
+</div>
