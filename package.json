@@ -36,6 +36,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@iconify/svelte": "^4.0.2",
     "bits-ui": "^0.21.12",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.4.0",
