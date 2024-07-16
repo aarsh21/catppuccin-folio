@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Avatar from '$lib/components/Avatar.svelte';
+	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import Icon from '@iconify/svelte';
 </script>
 
@@ -21,3 +22,9 @@
 	Linux. I enjoy web development and i live on the terminal. If I'm not coding, I'm probably losing
 	my mind in valorant or watching anime.
 </p>
+
+<div class="mt-4">
+	<h1 class="text-3xl font-semibold">
+		<ProjectCard />
+	</h1>
+</div>
