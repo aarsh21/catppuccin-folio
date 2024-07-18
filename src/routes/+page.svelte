@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Avatar from '$lib/components/Avatar.svelte';
+	import WorkCard from '$lib/components/WorkCard.svelte';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import Icon from '@iconify/svelte';
-	import { Work } from '$lib/workInfo';
+	import { Projects, Work } from '$lib/workInfo';
 </script>
 
 <div class="mt-4 flex items-center justify-self-auto text-3xl font-semibold">
@@ -25,12 +26,20 @@
 <div>
 	<h1 class="mb-4 text-3xl font-semibold">Work</h1>
 	{#each Work as work}
-		<ProjectCard
+		<WorkCard
 			position={work.position}
 			company={work.company}
 			end_date={work.end_date}
 			start_date={work.start_date}
 			responsiblities={work.responsibilities}
 		/>
+	{/each}
+</div>
+<div>
+	<h1 class="mb-4 mt-6 text-3xl font-semibold">Projects</h1>
+	{#each Projects as project}
+		<a href={project.link}>
+			<ProjectCard project={project.project} details={project.details} />
+		</a>
 	{/each}
 </div>
