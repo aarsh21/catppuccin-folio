@@ -9,7 +9,7 @@
 
 <Card.Root class=" mt-6 sm:col-span-2">
 	<Card.Header class="pb-6">
-		<Card.Title class="w-full">{company}</Card.Title>
+		<Card.Title class="w-full text-xl">{company}</Card.Title>
 		<div class="flex items-center justify-between">
 			<h1 class="mb-2 text-lg font-semibold">{position}</h1>
 			<p class="text-sm font-semibold">{`${start_date} - ${end_date}`}</p>

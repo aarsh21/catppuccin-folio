@@ -9,17 +9,6 @@ export const Work = [
 			'Optimized user experience through enhancements in the visual appeal and functionality of web content.',
 			'Streamlined development processes, contributing to a 50% increase in efficiency for the design team.'
 		]
-	},
-	{
-		position: 'Web Development Intern',
-		company: 'Dcycle Design Studio',
-		start_date: '06/2023',
-		end_date: '08/2023',
-		responsibilities: [
-			'Elevated organizational productivity by designing and implementing HTML/CSS templates for webpages.',
-			'Optimized user experience through enhancements in the visual appeal and functionality of web content.',
-			'Streamlined development processes, contributing to a 50% increase in efficiency for the design team.'
-		]
 	}
 ];
 
@@ -60,5 +49,32 @@ export const Projects = [
 			'Focused on responsive design, ensuring seamless usability across devices and enhancing user accessibility for efficient link management.'
 		],
 		link: 'https://slime-link.vercel.app/'
+	}
+];
+
+export const Links = [
+	{
+		name: 'GitHub',
+		url: 'https://github.com/aarsh21'
+	},
+	{
+		name: 'Email',
+		url: 'mailto:padiaaarsh@gmail.com'
+	},
+	{
+		name: 'Resume',
+		url: 'https://your-resume-link.com'
+	},
+	{
+		name: 'LinkedIn',
+		url: 'https://www.linkedin.com/in/aarshpadia21/'
+	},
+	{
+		name: 'Twitch',
+		url: 'https://www.twitch.tv/weel3fps'
+	},
+	{
+		name: 'YouTube',
+		url: 'https://www.youtube.com/weel3fps'
 	}
 ];
