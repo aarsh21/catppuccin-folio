@@ -10,7 +10,7 @@
 
 <div
 	class={cn(
-		'mx-auto max-h-96  rounded-lg border border-ctp-peach bg-ctp-crust text-ctp-text shadow-sm',
+		'mx-auto  rounded-lg border border-ctp-peach bg-ctp-crust text-ctp-text shadow-sm',
 		className
 	)}
 	{...$$restProps}
