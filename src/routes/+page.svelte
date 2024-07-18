@@ -3,7 +3,8 @@
 	import WorkCard from '$lib/components/WorkCard.svelte';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import Icon from '@iconify/svelte';
-	import { Projects, Work } from '$lib/workInfo';
+	import { Projects, Work } from '$lib/profileDetails';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <div class="mt-4 flex items-center justify-self-auto text-3xl font-semibold">
@@ -43,3 +44,5 @@
 		</a>
 	{/each}
 </div>
+
+<Footer />
