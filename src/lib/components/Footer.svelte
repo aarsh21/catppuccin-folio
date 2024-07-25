@@ -10,7 +10,7 @@
 			class="flex items-center justify-center gap-x-2 text-sm font-bold hover:text-ctp-sky"
 			href={link.url}
 		>
-			<Icon icon="mingcute:link-fill" class="text-ctp-peach" />
+			<Icon icon="mingcute:link-fill" class="h-4 w-4 text-ctp-peach" />
 			{link.name}
 		</a>
 	{/each}
