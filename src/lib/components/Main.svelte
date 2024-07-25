@@ -19,7 +19,7 @@
 <div>
 	<h1 class="mb-4 mt-6 text-3xl font-semibold">Projects</h1>
 	{#each Projects as project}
-		<a href={project.link}>
+		<a target="_blank" href={project.link}>
 			<ProjectCard project={project.project} details={project.details} />
 		</a>
 	{/each}
