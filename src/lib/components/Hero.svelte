@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Avatar from '$lib/components/Avatar.svelte';
-	import { Name, Location, Stuff, ShortPara } from '$lib/profileDetails';
+	import { Name, Location, Profession, Bio } from '$lib/profileDetails';
 	import Icon from '@iconify/svelte';
 </script>
 
@@ -14,8 +14,8 @@
 </div>
 <div class="ml-[6px] mt-2 flex items-center text-lg">
 	<Icon icon="uil:suitcase-alt" class=" h-6 w-6 text-ctp-peach" />
-	<h1 class="ml-2">{Stuff}</h1>
+	<h1 class="ml-2">{Profession}</h1>
 </div>
 <p class="mb-2 mt-4">
-	{ShortPara}
+	{Bio}
 </p>
