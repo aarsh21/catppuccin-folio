@@ -38,6 +38,8 @@
   },
   "type": "module",
   "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.0.21",
+    "@fontsource-variable/manrope": "^5.0.20",
     "@iconify/svelte": "^4.0.2",
     "bits-ui": "^0.21.12",
     "clsx": "^2.1.1",

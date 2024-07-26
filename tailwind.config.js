@@ -55,6 +55,7 @@ const config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
+				jetbrains: [' JetBrains Mono Variable '],
 				sans: [...fontFamily.sans]
 			}
 		}
