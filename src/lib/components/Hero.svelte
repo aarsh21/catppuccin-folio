@@ -16,6 +16,6 @@
 	<Icon icon="uil:suitcase-alt" class=" h-6 w-6 text-ctp-peach" />
 	<h1 class="ml-2">{Profession}</h1>
 </div>
-<p class="mb-2 mt-4">
+<p class="mt-4">
 	{Bio}
 </p>

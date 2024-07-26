@@ -1,10 +1,10 @@
 ---
-title: Ricing your own arch linux 
-description: Hyprland and alacritty zsh with starlight etc
+title: College is a huge shit show 
+description: In this blog i will share my experience on how CS colleges are a shit show 
 date: '2023-4-16'
 categories:
-  - sveltekit
-  - svelte
+  - ricing
+  - archlinux
 published: true
 ---
 
