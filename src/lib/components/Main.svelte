@@ -4,7 +4,7 @@
 	import { Projects, Work } from '$lib/profileDetails';
 </script>
 
-<div>
+<div class="mt-6">
 	<h1 class="mb-4 text-3xl font-semibold">Work</h1>
 	{#each Work as work}
 		<WorkCard
