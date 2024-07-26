@@ -1,6 +1,6 @@
 ---
-title: Second
-description: Second post.
+title: Ricing your own arch linux 
+description: Hyprland and alacritty zsh with starlight etc
 date: '2023-4-16'
 categories:
   - sveltekit
