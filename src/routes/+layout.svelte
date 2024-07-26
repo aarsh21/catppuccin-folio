@@ -4,7 +4,7 @@
 	import { Name } from '$lib/profileDetails';
 </script>
 
-<head><title class="font-black">{Name}</title></head>
+<head><title>{Name}</title></head>
 
 <main class="bg-ctp-crust px-2.5 text-lg text-ctp-text antialiased">
 	<Navbar />
