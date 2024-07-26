@@ -4,7 +4,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="mt-5 flex items-center justify-center gap-x-4">
+<div class="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-4">
 	{#each Links as link}
 		<a
 			class="flex items-center justify-center gap-x-2 text-sm font-bold hover:text-ctp-sky"
