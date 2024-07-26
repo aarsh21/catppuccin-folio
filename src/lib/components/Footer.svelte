@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Links } from '$lib/profileDetails';
-
 	import Icon from '@iconify/svelte';
 </script>
 
@@ -15,7 +14,6 @@
 		</a>
 	{/each}
 </div>
-
 <div class="mt-3 flex items-center justify-center text-center text-sm font-semibold">
 	<p>Made with ❤️ by aarsh</p>
 </div>
