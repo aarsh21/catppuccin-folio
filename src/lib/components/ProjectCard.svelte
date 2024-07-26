@@ -6,7 +6,7 @@
 <Card.Root class="col-span-1 mt-6 hover:border-ctp-sky sm:col-span-2">
 	<Card.Header class="pb-6">
 		<Card.Title class="text-lg">{project}</Card.Title>
-		<Card.Description class=" mt-0 ">
+		<Card.Description class=" mt-0 flex flex-col gap-y-2 ">
 			{#each details as detail}
 				<li class=" text-[1rem] leading-tight">{detail}</li>
 			{/each}

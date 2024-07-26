@@ -14,7 +14,7 @@
 			<h1 class="mb-2 text-lg font-semibold">{position}</h1>
 			<p class="text-sm font-semibold">{`${start_date} - ${end_date}`}</p>
 		</div>
-		<Card.Description class="mt-0">
+		<Card.Description class="mt-0 flex flex-col gap-y-2">
 			{#each responsiblities as response}
 				<li class="text-[1rem] leading-tight">{response}</li>
 			{/each}
