@@ -1,9 +1,9 @@
 ---
-title: College is a huge shit show 
-description: In this blog i will share my experience on how CS colleges are a shit show 
+title: Ricing your own arch linux 
+description: In this blog i will share my experience on how i rice my own arch linux from scratch 
 date: '2023-4-16'
 categories:
-  - ricing
+  - sveltekit
   - archlinux
 published: true
 ---
