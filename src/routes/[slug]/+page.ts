@@ -8,7 +8,8 @@ export async function load({ params }) {
 			content: post.default,
 			meta: post.metadata
 		};
-	} catch (e) {
+	} catch (err) {
 		error(404, `couldn't find ${params.slug}`);
+		console.log(err);
 	}
 }

@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
+	import { Badge } from '$lib/components/ui/badge';
 
 	export let data;
 </script>
-
-<!-- TODO: do better job at rendering markdown -->
 
 <svelte:head>
 	<title>{data.meta.title}</title>
@@ -12,7 +11,9 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article>
+<article
+	class="prose prose-2xl text-ctp-text prose-headings:text-ctp-peach prose-strong:text-ctp-sky prose-code:text-ctp-blue"
+>
 	<hgroup>
 		<h1>{data.meta.title}</h1>
 		<p>Published at {formatDate(data.meta.date)}</p>
@@ -20,11 +21,13 @@
 
 	<div class="tags">
 		{#each data.meta.categories as category}
-			<span class="surface-4">&num;{category}</span>
+			<Badge class="text-ctp-peach">
+				<span class="surface-4">&num;{category}</span>
+			</Badge>
 		{/each}
 	</div>
 
-	<div class="prose">
+	<div class="prose-xl">
 		<svelte:component this={data.content} />
 	</div>
 </article>

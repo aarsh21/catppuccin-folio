@@ -41,6 +41,7 @@
     "@fontsource-variable/jetbrains-mono": "^5.0.21",
     "@fontsource-variable/manrope": "^5.0.20",
     "@iconify/svelte": "^4.0.2",
+    "@tailwindcss/typography": "^0.5.13",
     "bits-ui": "^0.21.12",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.4.0",

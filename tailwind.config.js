@@ -64,7 +64,8 @@ const config = {
 		require('@catppuccin/tailwindcss')({
 			prefix: 'ctp',
 			defaultFlavour: 'mocha'
-		})
+		}),
+		require('@tailwindcss/typography')
 	]
 };
 
