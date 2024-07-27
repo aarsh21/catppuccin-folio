@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Links } from '$lib/profileDetails';
+	import { Links, Name } from '$lib/profileDetails';
 	import Icon from '@iconify/svelte';
 </script>
 
@@ -16,6 +16,6 @@
 		{/each}
 	</div>
 	<div class="flex items-center justify-center pb-3 text-center text-sm font-semibold">
-		<p>Made with ❤️ by aarsh</p>
+		<p>{`Made with   ❤️  \t by ${Name.split(' ')[0]}`}</p>
 	</div>
 </footer>
