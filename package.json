@@ -45,6 +45,9 @@
     "@tailwindcss/typography": "^0.5.13",
     "bits-ui": "^0.21.12",
     "clsx": "^2.1.1",
+    "rehype-slug": "^6.0.0",
+    "remark-toc": "^9.0.0",
+    "remark-unwrap-images": "^4.0.0",
     "tailwind-merge": "^2.4.0",
     "tailwind-variants": "^0.2.1"
   }
