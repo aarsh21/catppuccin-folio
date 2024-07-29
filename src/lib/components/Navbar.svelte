@@ -14,10 +14,5 @@
 			href="/blog"
 			class={$page.route.id === '/(app)/blog' ? `${styles}` : 'hover:text-ctp-overlay1'}>blog</a
 		>
-		<a
-			href="/guestbook"
-			class={$page.route.id === '/(app)/guestbook' ? `${styles}` : 'hover:text-ctp-overlay1'}
-			>guestbook</a
-		>
 	</nav>
 </aside>
