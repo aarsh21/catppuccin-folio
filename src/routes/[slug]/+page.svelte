@@ -12,16 +12,16 @@
 </svelte:head>
 
 <article
-	class="prose prose-2xl text-ctp-text prose-headings:text-ctp-peach prose-strong:text-ctp-sky prose-code:text-ctp-blue"
+	class="prose text-ctp-text prose-headings:text-ctp-peach prose-strong:text-ctp-sky prose-code:text-ctp-blue"
 >
-	<hgroup>
+	<hgroup class="prose-sm">
 		<h1>{data.meta.title}</h1>
 		<p>Published at {formatDate(data.meta.date)}</p>
 	</hgroup>
 
 	<div class="tags">
 		{#each data.meta.categories as category}
-			<Badge class="text-ctp-peach">
+			<Badge variant="outline" class="text-ctp-peach">
 				<span class="surface-4">&num;{category}</span>
 			</Badge>
 		{/each}
