@@ -3,4 +3,6 @@
 	export { img };
 </script>
 
+<!-- TODO: fix styling and improve markdown layout -->
+
 <slot />
