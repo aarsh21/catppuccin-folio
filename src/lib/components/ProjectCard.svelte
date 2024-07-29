@@ -8,7 +8,7 @@
 		<Card.Title class="text-lg">{project}</Card.Title>
 		<Card.Description class=" mt-0 flex flex-col gap-y-2 ">
 			{#each details as detail}
-				<li class=" text-[1rem] leading-tight">{detail}</li>
+				<li class=" list-inside text-[1rem] leading-tight">{detail}</li>
 			{/each}
 		</Card.Description>
 	</Card.Header>
