@@ -8,7 +8,7 @@
 <Hero />
 <Main />
 
-<div class="mx-4">
+<div class="mx-4 mb-10">
 	<h1 class="text-3xl font-bold text-ctp-yellow">Blogs</h1>
 	{#each data.posts as post}
 		<a href={post.slug}>
