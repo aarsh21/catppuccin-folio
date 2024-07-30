@@ -53,29 +53,37 @@ export const Projects = [
 	}
 ];
 
+import { Github, Mail, FileText, Linkedin, Twitch, Youtube } from 'lucide-svelte';
+
 export const Links = [
 	{
 		name: 'GitHub',
-		url: 'https://github.com/aarsh21'
+		url: 'https://github.com/aarsh21',
+		icon: Github
 	},
 	{
 		name: 'Email',
-		url: 'mailto:padiaaarsh@gmail.com'
+		url: 'mailto:padiaaarsh@gmail.com',
+		icon: Mail
 	},
 	{
 		name: 'Resume',
-		url: 'https://your-resume-link.com'
+		url: 'https://your-resume-link.com',
+		icon: FileText
 	},
 	{
 		name: 'LinkedIn',
-		url: 'https://www.linkedin.com/in/aarshpadia21/'
+		url: 'https://www.linkedin.com/in/aarshpadia21/',
+		icon: Linkedin
 	},
 	{
 		name: 'Twitch',
-		url: 'https://www.twitch.tv/weel3fps'
+		url: 'https://www.twitch.tv/weel3fps',
+		icon: Twitch
 	},
 	{
 		name: 'YouTube',
-		url: 'https://www.youtube.com/weel3fps'
+		url: 'https://www.youtube.com/weel3fps',
+		icon: Youtube
 	}
 ];

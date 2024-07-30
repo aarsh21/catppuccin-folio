@@ -1,8 +1,9 @@
 <script lang="ts">
+	import { SquareArrowOutUpRightIcon } from 'lucide-svelte';
+
 	import WorkCard from '$lib/components/WorkCard.svelte';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import { Projects, Work, Links } from '$lib/profileDetails';
-	import Icon from '@iconify/svelte';
 </script>
 
 <div class="mt-0 lg:mt-4">
@@ -19,22 +20,20 @@
 	{/each}
 </div>
 {#each Projects as project}
-	<a target="_blank" href={project.link}>
-		<ProjectCard project={project.project} details={project.details} />
-	</a>
+	<ProjectCard project={project.project} link={project.link} details={project.details} />
 {/each}
 
 <a
+	target="_blank"
 	href={Links.find((link) => link.name === 'GitHub')?.url}
 	class="text-md group mt-6 flex items-center justify-end font-semibold"
 >
 	<span
-		class="mr-2 text-ctp-sapphire transition-all duration-100 ease-in-out group-hover:text-ctp-mauve"
+		class="mr-2 text-sm font-semibold text-ctp-green transition-all duration-100 ease-in-out group-hover:text-ctp-mauve"
+		>more projects</span
 	>
-		More projects
-	</span>
-	<Icon
-		class="h-6 w-6 text-ctp-green transition-all duration-100  ease-in-out group-hover:text-ctp-mauve "
-		icon="humbleicons:external-link"
+	<SquareArrowOutUpRightIcon
+		class="h-4 w-4 text-ctp-green transition-all duration-100  ease-in-out group-hover:text-ctp-mauve "
+		strokeWidth="3px"
 	/>
 </a>
