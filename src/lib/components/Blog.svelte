@@ -5,13 +5,13 @@
 </script>
 
 <a href={slug}>
-	<Card.Root class=" mt-6 sm:col-span-2">
+	<Card.Root class=" m:col-span-2  mt-6">
 		<Card.Header class="pb-6">
-			<Card.Title class="w-full text-xl">
+			<Card.Title class="w-full text-xl text-ctp-yellow">
 				{title}
 			</Card.Title>
 			<div class="flex flex-wrap items-center justify-between">
-				<p class="text-sm font-medium">{formatDate(date)}</p>
+				<p class="text-sm font-bold text-ctp-sapphire">{formatDate(date)}</p>
 			</div>
 			<Card.Description class="mt-0 flex flex-col gap-y-2 text-[1rem] leading-tight">
 				{description}

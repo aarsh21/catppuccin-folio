@@ -11,14 +11,14 @@
 <a href={link}>
 	<Card.Root class=" mt-6 sm:col-span-2">
 		<Card.Header class="pb-6">
-			<Card.Title class="w-full text-xl">{company}</Card.Title>
+			<Card.Title class="w-full text-xl text-ctp-yellow">{company}</Card.Title>
 			<div class="flex flex-wrap items-center justify-between">
-				<h1 class="mb-2 text-lg font-semibold">{position}</h1>
-				<p class="text-sm font-semibold">{`${start_date} - ${end_date}`}</p>
+				<h1 class="mb-2 text-lg font-semibold text-ctp-sapphire">{position}</h1>
+				<p class="text-sm font-semibold text-ctp-mauve">{`${start_date} - ${end_date}`}</p>
 			</div>
 			<Card.Description class="mt-0 flex flex-col gap-y-2">
 				{#each responsiblities as response}
-					<li class="text-[1rem] leading-tight">{response}</li>
+					<li class=" text-[1rem] leading-tight marker:text-ctp-mauve">{response}</li>
 				{/each}
 			</Card.Description>
 		</Card.Header>

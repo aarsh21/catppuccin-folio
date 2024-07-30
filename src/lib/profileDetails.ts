@@ -1,4 +1,4 @@
-export const Name = 'Aarsh padia';
+export const Name = 'Aarsh Padia';
 
 export const Location = 'Rajkot , Gujarat';
 

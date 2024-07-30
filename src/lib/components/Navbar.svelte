@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	const styles =
-		'text-ctp-green underline decoration-wavy decoration-[1.5px] underline-offset-[6px] ';
+		'text-ctp-green underline decoration-ctp-mauve decoration-wavy decoration-[1.7px] underline-offset-[7px] ';
 	console.log($page.route.id);
 </script>
 

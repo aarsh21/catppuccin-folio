@@ -12,12 +12,12 @@
 </svelte:head>
 
 <article
-	class="prose text-ctp-text prose-headings:text-ctp-green prose-a:text-ctp-green prose-blockquote:text-ctp-text prose-strong:text-ctp-mauve prose-code:text-wrap prose-code:font-jetbrains prose-code:text-ctp-mauve prose-li:marker:text-ctp-green"
+	class="prose text-ctp-text prose-headings:text-ctp-green prose-a:text-ctp-yellow prose-blockquote:text-ctp-text prose-strong:text-ctp-mauve prose-code:text-wrap prose-code:font-jetbrains prose-li:marker:text-ctp-sapphire"
 >
-	<hgroup class="prose-xl text-ctp-text">
+	<hgroup class="mb-0 text-xl text-ctp-text">
 		<h1>{data.meta.title}</h1>
-		<p>
-			Published at <span class="font-semibold">
+		<p class="text-sm">
+			Published at <span class="font-bold text-ctp-yellow">
 				{formatDate(data.meta.date)}
 			</span>
 		</p>
@@ -31,7 +31,7 @@
 		{/each}
 	</div>
 
-	<div class="prose-xl mt-6">
+	<div class=" prose-lg mt-6">
 		<svelte:component this={data.content} />
 	</div>
 </article>
