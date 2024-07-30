@@ -15,7 +15,7 @@ I wanted to build a portfolio website for me and my friends so that everyone can
 
 ## To use this template:
 
-[Clone this repo](https://github.com/aarsh21/aarsh-xyz) , Then I would like you to go to the cloned repo folder on your system and remove **.git** folder from it . So that it will remove all the information about my commits and logs of my Github account.Then I would like you to initialise your own git repository.
+[Clone this repo](https://github.com/aarsh21/aarsh-xyz) , Then I would like you to go to the cloned repo folder on your system and remove **.git** folder from it . So that it will remove all the information about my commits and logs of my GitHub account.Then I would like you to initialise your own git repository.
 
 ```bash
 # only for Linux and Mac

@@ -35,16 +35,6 @@ export const Projects = [
 		link: 'https://discord-clone-production-cc9a.up.railway.app/invite/e8e71148-aba9-42d2-99d5-8ab8c28acdc9'
 	},
 	{
-		project: 'Ematchi',
-		details: [
-			'Gained expertise in building interactive user interfaces using Svelte, improving understanding of reactive programming and efficient component-based architecture.',
-			'Developed strong skills in designing game mechanics and logic, creating an engaging emoji matching game with three distinct modes, enhancing problem-solving abilities.',
-			'Learned to manage complex state and improve user experience by creating intuitive and responsive UI elements tailored for a seamless gaming experience.',
-			'Applied best practices for web performance optimization, ensuring fast load times and smooth gameplay across different devices and browsers.'
-		],
-		link: 'https://ematchi-aarsh21.vercel.app/'
-	},
-	{
 		project: 'Article Digester',
 		details: [
 			'Article Digester is a web application that allows users to summarize articles by providing the summarized text from the URL.',
