@@ -5,8 +5,8 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="mt-6">
-	<h1 class="mb-4 text-3xl font-semibold text-ctp-yellow">Work</h1>
+<div class="mt-0 lg:mt-4">
+	<h1 class=" mb-4 text-3xl font-semibold text-ctp-yellow">Work</h1>
 	{#each Work as work}
 		<WorkCard
 			link={work.link}
@@ -26,7 +26,7 @@
 
 <a
 	href={Links.find((link) => link.name === 'GitHub')?.url}
-	class="group mt-6 flex items-center justify-end text-sm font-bold"
+	class="text-md group mt-6 flex items-center justify-end font-semibold"
 >
 	<span
 		class="mr-2 text-ctp-sapphire transition-all duration-100 ease-in-out group-hover:text-ctp-mauve"
@@ -34,7 +34,7 @@
 		More projects
 	</span>
 	<Icon
-		class="h-4 w-4 text-ctp-green transition-all duration-100  ease-in-out group-hover:text-ctp-mauve "
+		class="h-6 w-6 text-ctp-green transition-all duration-100  ease-in-out group-hover:text-ctp-mauve "
 		icon="humbleicons:external-link"
 	/>
 </a>

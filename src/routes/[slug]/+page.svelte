@@ -12,7 +12,7 @@
 </svelte:head>
 
 <article
-	class="prose text-ctp-text prose-headings:mb-3 prose-headings:mt-3 prose-headings:text-ctp-green prose-p:mb-2 prose-a:text-ctp-yellow prose-blockquote:text-ctp-text prose-strong:text-ctp-mauve prose-code:text-wrap prose-code:font-jetbrains prose-li:marker:text-ctp-sapphire"
+	class="prose text-ctp-text prose-headings:mb-1 prose-headings:mt-1 prose-headings:text-ctp-green prose-p:mb-0 prose-a:text-ctp-yellow prose-blockquote:text-ctp-text prose-strong:text-ctp-mauve prose-code:text-wrap prose-code:font-jetbrains prose-li:marker:text-ctp-sapphire prose-headings:lg:mb-4 prose-headings:lg:mt-4"
 >
 	<hgroup class="mb-0 text-xl text-ctp-text">
 		<h1>{data.meta.title}</h1>
@@ -23,15 +23,15 @@
 		</p>
 	</hgroup>
 
-	<div class="tags">
+	<div class="tags mt-2">
 		{#each data.meta.categories as category}
-			<Badge class=" bg-ctp-base text-ctp-mauve outline-ctp-green">
+			<Badge class=" mr-2 bg-ctp-crust text-ctp-mauve outline-ctp-green">
 				<span class="surface-4">&num;{category}</span>
 			</Badge>
 		{/each}
 	</div>
 
-	<div class=" prose-lg mt-6">
+	<div class=" prose-lg leading-7 lg:text-xl lg:leading-normal">
 		<svelte:component this={data.content} />
 	</div>
 </article>
