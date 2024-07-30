@@ -1,7 +1,8 @@
 <script lang="ts">
 	import WorkCard from '$lib/components/WorkCard.svelte';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
-	import { Projects, Work } from '$lib/profileDetails';
+	import { Projects, Work, Links } from '$lib/profileDetails';
+	import Icon from '@iconify/svelte';
 </script>
 
 <div class="mt-6">
@@ -16,11 +17,16 @@
 		/>
 	{/each}
 </div>
-<div>
-	<h1 class="mb-4 mt-6 text-3xl font-semibold">Projects</h1>
-	{#each Projects as project}
-		<a target="_blank" href={project.link}>
-			<ProjectCard project={project.project} details={project.details} />
-		</a>
-	{/each}
-</div>
+{#each Projects as project}
+	<a target="_blank" href={project.link}>
+		<ProjectCard project={project.project} details={project.details} />
+	</a>
+{/each}
+
+<a
+	href={Links.find((link) => link.name === 'GitHub')?.url}
+	class="mt-6 flex items-center justify-end text-sm font-bold"
+>
+	<span class="mr-2"> More projects </span>
+	<Icon class="h-4 w-4 text-ctp-peach" icon="humbleicons:external-link" />
+</a>
