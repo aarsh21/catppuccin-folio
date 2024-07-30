@@ -14,7 +14,10 @@
 
 <svelte:element
 	this={tag}
-	class={cn('w-[326px] text-lg font-semibold leading-none tracking-tight', className)}
+	class={cn(
+		'underline-offset-3 w-[326px] text-lg  font-semibold leading-none tracking-wider text-ctp-green underline hover:text-ctp-mauve',
+		className
+	)}
 	{...$$restProps}
 >
 	<slot />
