@@ -5,7 +5,7 @@
 </script>
 
 <a href={slug}>
-	<Card.Root class=" mt-6 hover:border-ctp-sky sm:col-span-2">
+	<Card.Root class=" mt-6 sm:col-span-2">
 		<Card.Header class="pb-6">
 			<Card.Title class="w-full text-xl">
 				{title}

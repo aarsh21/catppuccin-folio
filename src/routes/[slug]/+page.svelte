@@ -12,7 +12,7 @@
 </svelte:head>
 
 <article
-	class="prose text-ctp-text prose-headings:text-ctp-peach prose-a:text-ctp-peach prose-blockquote:text-ctp-text prose-strong:text-ctp-sky prose-code:text-wrap prose-code:font-jetbrains prose-code:text-ctp-sky prose-li:marker:text-ctp-peach"
+	class="prose text-ctp-text prose-headings:text-ctp-green prose-a:text-ctp-green prose-blockquote:text-ctp-text prose-strong:text-ctp-mauve prose-code:text-wrap prose-code:font-jetbrains prose-code:text-ctp-mauve prose-li:marker:text-ctp-green"
 >
 	<hgroup class="prose-xl text-ctp-text">
 		<h1>{data.meta.title}</h1>
@@ -25,7 +25,7 @@
 
 	<div class="tags">
 		{#each data.meta.categories as category}
-			<Badge class=" bg-ctp-base text-ctp-sky outline-ctp-peach">
+			<Badge class=" bg-ctp-base text-ctp-mauve outline-ctp-green">
 				<span class="surface-4">&num;{category}</span>
 			</Badge>
 		{/each}

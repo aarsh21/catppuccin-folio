@@ -7,7 +7,7 @@
 <svelte:head><title>{Name}</title></svelte:head>
 
 <div class="relative min-h-screen text-ctp-text">
-	<main class="flex-grow bg-ctp-crust px-2.5 text-lg text-ctp-text antialiased">
+	<main class="flex-grow bg-ctp-base px-2.5 text-lg text-ctp-text antialiased">
 		<Navbar />
 		<slot></slot>
 	</main>

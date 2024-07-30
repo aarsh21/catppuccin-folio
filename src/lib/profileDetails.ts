@@ -10,6 +10,7 @@ export const Bio = `I'm a 20 y/o cs undergrad student. I love building things , 
 
 export const Work = [
 	{
+		link: 'https://dcycle.design/',
 		position: 'Web Development Intern',
 		company: 'Dcycle Design Studio',
 		start_date: '06/2023',

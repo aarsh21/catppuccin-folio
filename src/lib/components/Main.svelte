@@ -9,6 +9,7 @@
 	<h1 class="mb-4 text-3xl font-semibold">Work</h1>
 	{#each Work as work}
 		<WorkCard
+			link={work.link}
 			position={work.position}
 			company={work.company}
 			end_date={work.end_date}
@@ -25,8 +26,13 @@
 
 <a
 	href={Links.find((link) => link.name === 'GitHub')?.url}
-	class="mt-6 flex items-center justify-end text-sm font-bold"
+	class="group mt-6 flex items-center justify-end text-sm font-bold"
 >
-	<span class="mr-2"> More projects </span>
-	<Icon class="h-4 w-4 text-ctp-peach" icon="humbleicons:external-link" />
+	<span class="mr-2 transition-all duration-100 ease-in-out group-hover:text-ctp-mauve">
+		More projects
+	</span>
+	<Icon
+		class="h-4 w-4 text-ctp-green transition-all duration-100  ease-in-out group-hover:text-ctp-mauve "
+		icon="humbleicons:external-link"
+	/>
 </a>
