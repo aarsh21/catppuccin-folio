@@ -26,7 +26,7 @@ I built this portfolio template for myself and my friends to help everyone kicks
    git init .
    # what ever node package manager you prefer eg : npm , bun , pnpm.
    bun i
-
+   bun run dev
    ```
 
 2. **Open the Repo in Your Code Editor:**
@@ -144,6 +144,23 @@ I built this portfolio template for myself and my friends to help everyone kicks
 
 4. **Explore Shadcn-Svelte Components:**
    - Check out [Shadcn-svelte](https://www.shadcn-svelte.com/) for amazing Svelte components.
+
+## Deployment
+
+- Create a repository on github.
+- Add origin link and make a branch.
+- Push your code to origin.
+
+For Example:
+
+```bash
+# I am using SSH keys. You can use repository link too.
+git remote add origin git@github.com:YourUsername/repositoryName.git
+git branch -M main
+git push -u origin main
+```
+
+- I recommend using [vercel](https://vercel.com/) , [netlify](https://www.netlify.com/) or [cloudflare](https://pages.cloudflare.com/) .
 
 ## Conclusion
 
