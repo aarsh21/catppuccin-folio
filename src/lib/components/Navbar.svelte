@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	const styles =
 		'text-ctp-green underline decoration-ctp-mauve decoration-wavy decoration-[1.7px] underline-offset-[7px] ';
-	console.log($page.route.id);
 </script>
 
 <aside class="tracking-light mb-8">

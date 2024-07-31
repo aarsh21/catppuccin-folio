@@ -9,131 +9,140 @@ categories:
 published: true
 ---
 
-## Why build this template? **(Inspiration)**
+## Why Build This Template? **(Inspiration)**
 
-I wanted to build a portfolio website for me and my friends so that everyone can start writing blogs show their skills online . As a **computer science** student it should be shameful that I am in my last year of college still I didn't have my own portfolio.
+I built this portfolio template for myself and my friends to help everyone kickstart their blogging journey and showcase their skills online. As a **computer science** student, it’s almost a shame that I'm in my final year of college without a portfolio.
 
-## To use this template:
+## Using This Template
 
-[Clone this repo](https://github.com/aarsh21/aarsh-xyz) , Then I would like you to go to the cloned repo folder on your system and remove **.git** folder from it . So that it will remove all the information about my commits and logs of my GitHub account.Then I would like you to initialise your own git repository.
+1. **Clone the Repo:**
+   [Clone this repo](https://github.com/aarsh21/aarsh-xyz). Then, navigate to the cloned repo folder on your system and remove the **.git** folder to erase all information about my commits and logs. After that, initialize your own git repository.
 
-```bash
-# only for Linux and Mac
-git clone https://github.com/aarsh21/catpuccin-folio portfolio
-cd portfolio
-rm -rf .git
-git init .
-```
+   ```bash
+   # For Linux and Mac
+   git clone https://github.com/aarsh21/catppuccin-folio portfolio
+   cd portfolio
+   rm -rf .git
+   git init .
+   bun i
+   ```
 
-Open the downloaded repo in whatever code editor you're use.
+2. **Open the Repo in Your Code Editor:**
 
-```bash
-nvim .
-# or
-code .
-# or
-zed .
-```
+   ```bash
+   nvim .
+   # or
+   code .
+   # or
+   zed .
+   ```
 
-- Entire template renders text dynamically from one typescript file . The only thing you need to do is change that file and then your own portfolio will be ready.
+3. **Modify the Template:**
 
-- Then I would like you to search for [<ins> src/lib/profileDetails.ts</ins>](https://github.com/aarsh21/catppuccin-folio/blob/main/src/lib/profileDetails.ts) .
-- Then fill it with your details , If you don't know **Javascript/Typescript** I recommend using [Claude](https://claude.ai/new) .
+   - The template renders text dynamically from a single TypeScript file. Simply edit that file to get your portfolio up and running.
 
-- To add your custom-link icons you need to checkout [lucide-icons](https://lucide.dev/) .
+   - Update your details in [src/lib/profileDetails.ts](https://github.com/aarsh21/catppuccin-folio/blob/main/src/lib/profileDetails.ts). If you're new to JavaScript/TypeScript, I recommend using [Claude](https://claude.ai/new).
 
-- For example :
+   - **Custom Link Icons:** Check out [lucide-icons](https://lucide.dev/) to add your own icons.
 
-```typescript
-export const Name = 'Aarsh Padia';
+   Example:
 
-export const Location = 'Rajkot , Gujarat';
+   ```typescript
+   import profile from '$lib/images/profile.png';
+   import { Github, Mail, FileText, Linkedin, Twitch, Youtube } from 'lucide-svelte';
 
-export const Profession = 'Web Developer and OSS Contributor';
+   export const profilePicture = profile;
+   export const Name = 'Aarsh Padia';
+   export const Location = 'Rajkot, Gujarat';
+   export const Profession = 'Web Developer and OSS Contributor';
+   export const Bio = `I'm a 20 y/o CS undergrad student. I love building things, playing games, and ricing my Arch Linux. Web development is my passion, and I live on the terminal. When I'm not coding, I'm probably losing my mind in Valorant or watching anime.`;
+   export const Work = [
+   	{
+   		link: 'https://dcycle.design/',
+   		position: 'Web Development Intern',
+   		company: 'Dcycle Design Studio',
+   		start_date: '06/2023',
+   		end_date: '08/2023',
+   		responsibilities: [
+   			'Elevated organizational productivity by designing and implementing HTML/CSS templates for webpages.',
+   			'Optimized user experience through enhancements in visual appeal and functionality.',
+   			'Streamlined development processes, boosting efficiency by 50% for the design team.'
+   		]
+   	}
+   ];
+   export const Projects = [
+   	{
+   		project: 'Chat-App',
+   		details: [
+   			'Built full-stack applications using Next.js 14, enhancing server-side rendering and front-end development.',
+   			'Gained expertise in database management with Neon DB and Prisma, handling complex queries efficiently.',
+   			'Implemented real-time communication with LiveKit, mastering socket connections and data synchronization.',
+   			'Ensured secure authentication using Clerk, reinforcing user identity management and app security.'
+   		],
+   		link: 'https://discord-clone-production-cc9a.up.railway.app/invite/e8e71148-aba9-42d2-99d5-8ab8c28acdc9'
+   	},
+   	{
+   		project: 'Article Digester',
+   		details: [
+   			'Summarizes articles by extracting text from URLs, using Redux Toolkit, Vite with React, and Tailwind CSS.',
+   			'Integrated Rapid API for processing and summarizing content, showcasing API integration skills.'
+   		],
+   		link: 'https://articledigester.netlify.app/'
+   	},
+   	{
+   		project: 'Slime-Link',
+   		details: [
+   			'Created an open-source alternative to Tree Link with Svelte and Firebase for dynamic interfaces.',
+   			'Ensured responsive design for seamless usability across devices.'
+   		],
+   		link: 'https://slime-link.vercel.app/'
+   	}
+   ];
+   export const Links = [
+   	{ name: 'GitHub', url: 'https://github.com/aarsh21', icon: Github },
+   	{ name: 'Email', url: 'mailto:padiaaarsh@gmail.com', icon: Mail },
+   	{ name: 'Resume', url: 'https://your-resume-link.com', icon: FileText },
+   	{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/aarshpadia21/', icon: Linkedin },
+   	{ name: 'Twitch', url: 'https://www.twitch.tv/weel3fps', icon: Twitch },
+   	{ name: 'YouTube', url: 'https://www.youtube.com/weel3fps', icon: Youtube }
+   ];
+   ```
 
-export const Bio = `I'm a 20 y/o cs undergrad student. I love building things , playing games and ricing my Arch
-	Linux. I enjoy web development and i live on the terminal. If I'm not coding, I'm probably losing
-	my mind in valorant or watching anime.`;
+4. **Customize Code Themes:**
 
-export const Work = [
-	{
-		link: 'https://dcycle.design/',
-		position: 'Web Development Intern',
-		company: 'Dcycle Design Studio',
-		start_date: '06/2023',
-		end_date: '08/2023',
-		responsibilities: [
-			'Elevated organizational productivity by designing and implementing HTML/CSS templates for webpages.',
-			'Optimized user experience through enhancements in the visual appeal and functionality of web content.',
-			'Streamlined development processes, contributing to a 50% increase in efficiency for the design team.'
-		]
-	}
-];
+   For code highlighting, Shiki is used. To change code themes, modify [svelte.config.js](https://github.com/aarsh21/catppuccin-folio/blob/main/svelte.config.js). Replace **catppuccin-frappe** with your preferred theme. Shiki provides Intellisense for themes, so you don’t have to search Google for theme names. 😉
 
-export const Projects = [
-	{
-		project: 'Chat-App',
-		details: [
-			'Gained expertise in building full-stack applications using Next.js 14, enhancing understanding of server-side rendering and modern front-end development practices.',
-			'Developed strong skills in database management and optimization by integrating Neon DB with Prisma, learning to efficiently handle complex queries and data relationships.',
-			'Mastered the implementation of real-time communication features using LiveKit, improving knowledge of socket connections and real-time data synchronization.',
-			'Implemented secure authentication and authorization using Clerk, reinforcing understanding of user identity management and application security.'
-		],
-		link: 'https://discord-clone-production-cc9a.up.railway.app/invite/e8e71148-aba9-42d2-99d5-8ab8c28acdc9'
-	},
-	{
-		project: 'Article Digester',
-		details: [
-			'Article Digester is a web application that allows users to summarize articles by providing the summarized text from the URL.',
-			'Utilizes Redux Toolkit, Vite with React, and Tailwind CSS to deliver a seamless and intuitive user experience.',
-			'Utilized Rapid API to seamlessly process and extract relevant information from articles, showcasing proficiency in integrating external services to enhance content digestion on a professional platform.'
-		],
-		link: 'https://articledigester.netlify.app/'
-	},
-	{
-		project: 'Slime-Link',
-		details: [
-			'Created Slime Link, an open-source alternative to Tree Link, using Svelte for dynamic user interfaces and Firebase for efficient backend management.',
-			'Focused on responsive design, ensuring seamless usability across devices and enhancing user accessibility for efficient link management.'
-		],
-		link: 'https://slime-link.vercel.app/'
-	}
-];
+   ```javascript
+   const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'catppuccin-frappe' }));
+   ```
 
-import { Github, Mail, FileText, Linkedin, Twitch, Youtube } from 'lucide-svelte';
+   Check out [Shiki](https://shiki.style/) for more details.
 
-export const Links = [
-	{
-		name: 'GitHub',
-		url: 'https://github.com/aarsh21',
-		icon: Github
-	},
-	{
-		name: 'Email',
-		url: 'mailto:padiaaarsh@gmail.com',
-		icon: Mail
-	},
-	{
-		name: 'Resume',
-		url: 'https://your-resume-link.com',
-		icon: FileText
-	},
-	{
-		name: 'LinkedIn',
-		url: 'https://www.linkedin.com/in/aarshpadia21/',
-		icon: Linkedin
-	},
-	{
-		name: 'Twitch',
-		url: 'https://www.twitch.tv/weel3fps',
-		icon: Twitch
-	},
-	{
-		name: 'YouTube',
-		url: 'https://www.youtube.com/weel3fps',
-		icon: Youtube
-	}
-];
-```
+5. **Change Your Profile Picture:**
 
-After you're done editing you might think how do I change profile picture to my own. The easiest way to do is to replace image in with the same filename and Extention in [_src/lib/image/profile.png_](https://github.com/aarsh21/catppuccin-folio/blob/main/src/lib/images/profile.png)
+   Replace the image in [_src/lib/image/profile.png_](https://github.com/aarsh21/catppuccin-folio/blob/main/src/lib/images/profile.png) with your own image, ensuring it has the same filename and extension.
+
+6. **Clean Up the Posts Folder:**
+
+   Remove all files from [src/posts/](https://github.com/aarsh21/catppuccin-folio/tree/main/src/posts).
+
+## How Do I Make This Template Entirely Mine?
+
+1. **Customize the Color Palette:**
+
+   - Tailwind CSS and Catppuccin colors are used. Check them out [here](https://tailwindcss.com/) and [here](https://github.com/catppuccin/catppuccin).
+
+2. **Leverage SvelteKit:**
+
+   - It’s easy to extend and tailor to your needs.
+
+3. **Markdown Rendering with MDsveX:**
+
+   - Powered by [MDsveX](https://github.com/pngwn/MDsveX).
+
+4. **Explore Shadcn-Svelte Components:**
+   - Check out [Shadcn-svelte](https://www.shadcn-svelte.com/) for amazing Svelte components.
+
+## Conclusion
+
+Opportunities are endless! Personally, I prefer my portfolio to be clean and minimalistic. Feel free to customize it however you like. Just make sure to give me credit or link back to the original repository. A star on GitHub would be appreciated too! ⭐️
