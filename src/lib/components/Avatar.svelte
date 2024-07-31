@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as Avatar from '$lib/components/ui/avatar/index.js';
-	import profilePictue from '$lib/images/rengoku.png';
+	import profilePictue from '$lib/images/profile.png';
 </script>
 
 <Avatar.Root>

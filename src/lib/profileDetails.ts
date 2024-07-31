@@ -1,3 +1,7 @@
+import profile from '$lib/images/profile.png';
+
+export const profilePicture = profile;
+
 export const Name = 'Aarsh Padia';
 
 export const Location = 'Rajkot , Gujarat';

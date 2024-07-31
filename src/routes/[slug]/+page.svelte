@@ -12,7 +12,7 @@
 </svelte:head>
 
 <article
-	class="prose text-ctp-text prose-headings:mb-1 prose-headings:mt-1 prose-headings:text-ctp-green prose-p:mb-0 prose-a:text-ctp-yellow prose-blockquote:text-ctp-text prose-strong:text-ctp-mauve prose-code:text-wrap prose-code:font-jetbrains prose-li:marker:text-ctp-sapphire prose-headings:lg:mb-4 prose-headings:lg:mt-4"
+	class="prose text-ctp-text prose-headings:mb-1 prose-headings:mt-1 prose-headings:text-ctp-green prose-p:mb-0 prose-a:text-ctp-yellow prose-blockquote:text-ctp-text prose-strong:text-ctp-mauve prose-code:font-jetbrains prose-li:marker:text-ctp-sapphire prose-headings:lg:mb-4 prose-headings:lg:mt-4"
 >
 	<hgroup class="mb-0 text-xl text-ctp-text">
 		<h1>{data.meta.title}</h1>
