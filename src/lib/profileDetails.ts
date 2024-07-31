@@ -1,4 +1,5 @@
 import profile from '$lib/images/profile.png';
+import { Github, Mail, FileText, Linkedin, Twitch, Youtube, X } from 'lucide-svelte';
 
 export const profilePicture = profile;
 
@@ -57,8 +58,6 @@ export const Projects = [
 	}
 ];
 
-import { Github, Mail, FileText, Linkedin, Twitch, Youtube } from 'lucide-svelte';
-
 export const Links = [
 	{
 		name: 'GitHub',
@@ -67,12 +66,17 @@ export const Links = [
 	},
 	{
 		name: 'Email',
-		url: 'mailto:padiaaarsh@gmail.com',
+		url: 'mailto:aarshpersonal21@gmail.com',
 		icon: Mail
 	},
 	{
+		name: 'X',
+		url: 'https://x.com/bukubukufps',
+		icon: X
+	},
+	{
 		name: 'Resume',
-		url: 'https://your-resume-link.com',
+		url: 'https://drive.google.com/uc?export=download&id=11OOFNEjwML-2tdqofzNmMlmquTaYNOaY',
 		icon: FileText
 	},
 	{
@@ -87,7 +91,7 @@ export const Links = [
 	},
 	{
 		name: 'YouTube',
-		url: 'https://www.youtube.com/weel3fps',
+		url: 'https://www.youtube.com/bukubukufps',
 		icon: Youtube
 	}
 ];
