@@ -24,7 +24,9 @@ I built this portfolio template for myself and my friends to help everyone kicks
    cd portfolio
    rm -rf .git
    git init .
+   # what ever node package manager you prefer eg : npm , bun , pnpm.
    bun i
+
    ```
 
 2. **Open the Repo in Your Code Editor:**

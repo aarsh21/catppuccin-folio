@@ -8,7 +8,7 @@
 		link: string;
 </script>
 
-<Card.Root class="sm:col-span-2">
+<Card.Root class="mt-6 sm:col-span-2 ">
 	<Card.Header class="pb-6">
 		<a href={link}>
 			<Card.Title>{company}</Card.Title>
