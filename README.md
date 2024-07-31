@@ -1,38 +1,67 @@
-# create-svelte
+# ✨ Catppuccin Folio - Portfolio & Blog Template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A sleek portfolio & blog template built with SvelteKit and TailwindCSS. Easy to customize, with Markdown support and responsive design. Perfect for developers, students, and creators looking to shine online! 🌟
 
-## Creating a project
+## 🚀 Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **SvelteKit Framework**: Powerful reactive components
+- **TailwindCSS**: Easy styling and customization
+- **Markdown Blog Support**: Integrated MDsveX for smooth Markdown rendering
+- **Catppuccin Color Scheme**: Beautiful, customizable color palette 🎨
+- **Responsive Design**: Looks great on all devices 📱💻
+- **Easy Customization**: Most content editable in a single TypeScript file
+- **Code Syntax Highlighting**: Shiki for attractive code blocks 💻✨
+- **SEO Friendly**: Optimized for search engines 🔍
+- **Fast Performance**: Quick loading and smooth interactions ⚡
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## 🏁 Quick Start
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+1. Clone the repository
+2. Install dependencies with `npm install` (or `yarn`, `pnpm`, `bun`)
+3. Run the development server with `npm run dev`
+4. Start customizing and make it yours! 🎉
 
-## Developing
+For detailed instructions on customization and deployment, check out:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+[https://aarsh.vercel.app/use-this-template](https://aarsh.vercel.app/use-this-template)
 
-```bash
-npm run dev
+## 🎨 Customization
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- Edit `src/lib/profileDetails.ts` to update your personal information
+- Modify theme in `svelte.config.js` to change code highlighting style
+- Add your own blog posts in the `src/posts/` directory
 
-## Building
+## 🤝 Contributing
 
-To create a production version of your app:
+Want to help make this template even better? Here's how:
 
-```bash
-npm run build
-```
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/CoolNewFeature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some CoolNewFeature'`)
+5. Push to the branch (`git push origin feature/CoolNewFeature`)
+6. Open a Pull Request
 
-You can preview the production build with `npm run preview`.
+Please ensure your PR description clearly explains the changes and motivations. We appreciate your contributions! 🙌
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📬 Contact
+
+Aarsh Padia - [@bukubukufps](https://twitter.com/bukubukufps) - <aarshpersonal21@gmail.com>
+
+Project Link: [https://github.com/aarsh21/catppuccin-folio](https://github.com/aarsh21/catppuccin-folio)
+
+## 🙏 Acknowledgements
+
+- SvelteKit
+- TailwindCSS
+- MDsveX
+- Catppuccin
+- Shiki
+
+---
+
+If this template helps you create an awesome portfolio, consider giving it a star! ⭐ It means a lot to us!
