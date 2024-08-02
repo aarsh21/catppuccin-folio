@@ -1,7 +1,10 @@
 <script lang="ts">
-	import '../app.css';
-	import { profilePicture, Name } from '$lib/profileDetails';
 	import Footer from '$lib/components/Footer.svelte';
+	import { Name, profilePicture } from '$lib/profileDetails';
+	import { setupViewTransition } from 'sveltekit-view-transition';
+	import '../app.css';
+
+	setupViewTransition();
 </script>
 
 <svelte:head>
@@ -9,7 +12,7 @@
 	<link rel="icon" href={profilePicture} />
 </svelte:head>
 
-<div class="relative min-h-screen text-ctp-text">
+<div class="relative min-h-screen text-cat_text">
 	<slot></slot>
 
 	<Footer />

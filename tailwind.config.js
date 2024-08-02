@@ -15,6 +15,12 @@ const config = {
 		},
 		extend: {
 			colors: {
+				cat_primary: '#a6e3a1',
+				cat_secondary: '#74c7ec',
+				cat_tertiary: '#f9e2af',
+				cat_quaternary: '#cba6f7',
+				cat_base: '#1e1e2e',
+				cat_text: '#cdd6f4',
 				border: 'hsl(var(--border) / <alpha-value>)',
 				input: 'hsl(var(--input) / <alpha-value>)',
 				ring: 'hsl(var(--ring) / <alpha-value>)',
@@ -60,13 +66,7 @@ const config = {
 			}
 		}
 	},
-	plugins: [
-		require('@catppuccin/tailwindcss')({
-			prefix: 'ctp',
-			defaultFlavour: 'mocha'
-		}),
-		require('@tailwindcss/typography')
-	]
+	plugins: [require('@tailwindcss/typography')]
 };
 
 export default config;
