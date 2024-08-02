@@ -8,9 +8,9 @@
 		link: string;
 </script>
 
-<Card.Root class="mt-6 sm:col-span-2 ">
+<Card.Root class="sm:col-span-2 ">
 	<Card.Header class="pb-6">
-		<a href={link}>
+		<a target="_blank" href={link}>
 			<Card.Title>{company}</Card.Title>
 		</a>
 		<div class="flex flex-wrap items-center justify-between">
