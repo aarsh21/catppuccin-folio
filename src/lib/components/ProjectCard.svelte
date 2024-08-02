@@ -10,7 +10,7 @@
 		</a>
 		<Card.Description class=" mt-0 flex flex-col gap-y-2 ">
 			{#each details as detail}
-				<li class="lg:text-md text-[1rem] leading-5 marker:text-ctp-mauve lg:leading-tight">
+				<li class="lg:text-md text-[1rem] leading-5 marker:text-cat_quaternary lg:leading-tight">
 					{detail}
 				</li>
 			{/each}

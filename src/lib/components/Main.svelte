@@ -7,7 +7,7 @@
 </script>
 
 <div class="mt-0 lg:mt-4">
-	<h1 class=" mb-4 text-3xl font-semibold text-ctp-yellow">Work</h1>
+	<h1 class=" mb-4 text-3xl font-semibold text-cat_tertiary">Work</h1>
 	{#each Work as work}
 		<WorkCard
 			link={work.link}
@@ -29,11 +29,11 @@
 	class="text-md group mt-6 flex items-center justify-end font-semibold"
 >
 	<span
-		class="mr-2 text-sm font-semibold text-ctp-green transition-all duration-100 ease-in-out group-hover:text-ctp-mauve"
+		class="mr-2 text-sm font-semibold text-cat_primary transition-all duration-100 ease-in-out group-hover:text-cat_quaternary"
 		>more projects</span
 	>
 	<SquareArrowOutUpRightIcon
-		class="h-4 w-4 text-ctp-green transition-all duration-100  ease-in-out group-hover:text-ctp-mauve "
+		class="h-4 w-4 text-cat_primary transition-all duration-100  ease-in-out group-hover:text-cat_quaternary "
 		strokeWidth="3px"
 	/>
 </a>

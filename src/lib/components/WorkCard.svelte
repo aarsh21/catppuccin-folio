@@ -14,12 +14,12 @@
 			<Card.Title>{company}</Card.Title>
 		</a>
 		<div class="flex flex-wrap items-center justify-between">
-			<h1 class="mb-2 text-lg font-semibold text-ctp-sapphire">{position}</h1>
-			<p class="text-sm font-semibold text-ctp-yellow">{`${start_date} - ${end_date}`}</p>
+			<h1 class="mb-2 text-lg font-semibold text-cat_secondary">{position}</h1>
+			<p class="text-sm font-semibold text-cat_tertiary">{`${start_date} - ${end_date}`}</p>
 		</div>
 		<Card.Description class="mt-0 flex flex-col gap-y-1 lg:gap-y-2">
 			{#each responsiblities as response}
-				<li class=" lg:text-md text-[1rem] leading-5 marker:text-ctp-mauve lg:leading-tight">
+				<li class=" lg:text-md text-[1rem] leading-5 marker:text-cat_quaternary lg:leading-tight">
 					{response}
 				</li>
 			{/each}

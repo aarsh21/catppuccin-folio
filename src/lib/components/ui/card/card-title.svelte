@@ -15,7 +15,7 @@
 <svelte:element
 	this={tag}
 	class={cn(
-		'underline-offset-3 w-[326px] text-lg  font-semibold leading-none tracking-wider text-ctp-green underline hover:text-ctp-mauve',
+		'underline-offset-3 w-[326px] text-lg  font-semibold leading-none tracking-wider text-cat_primary underline hover:text-cat_quaternary',
 		className
 	)}
 	{...$$restProps}
