@@ -130,9 +130,30 @@ I built this portfolio template for myself and my friends to help everyone kicks
 
 ## How Do I Make This Template Entirely Mine?
 
-1. **Customize the Color Palette:**
+1. **Customizing Colors in Tailwind CSS**
 
-   - Tailwind CSS and Catppuccin colors are used. Check them out [here](https://tailwindcss.com/) and [here](https://github.com/catppuccin/catppuccin).
+   - To customize your color palette using Tailwind CSS and Catppuccin-inspired colors, follow these steps:
+
+   - Open your **tailwind.config.js** file.
+
+   - In the configuration object, add or modify the **theme.extend.colors** section as follows:
+
+     ```javascript
+     module.exports = {
+      theme: {
+       extend: {
+        colors: {
+         // CUSTOM COLORS CUSTOMIZED TO YOUR NEEDS
+         cat_primary: '#a6e3a1',
+         cat_secondary: '#74c7ec',
+         cat_tertiary: '#f9e2af',
+         cat_quaternary: '#cba6f7',
+         cat_base: '#1e1e2e',
+         cat_text: '#cdd6f4'
+        }
+       }
+      }
+     ```
 
 2. **Leverage SvelteKit:**
 
