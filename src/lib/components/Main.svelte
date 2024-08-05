@@ -19,6 +19,7 @@
 		/>
 	{/each}
 </div>
+<h1 class="mb-3 mt-3 text-3xl font-semibold text-cat_tertiary">Projects</h1>
 {#each Projects as project}
 	<ProjectCard project={project.project} link={project.link} details={project.details} />
 {/each}
