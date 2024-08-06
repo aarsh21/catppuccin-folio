@@ -23,13 +23,32 @@ A sleek portfolio & blog template built with SvelteKit and TailwindCSS. Easy to 
 
 For detailed instructions on customization and deployment, check out:
 
-[https://aarsh.vercel.app/use-this-template](https://aarsh.vercel.app/use-this-template)
+[https://aarsh.vercel.app/use-this-template](https://aarsh-xyz-git-main-aarsh21s-projects.vercel.app/use-this-template)
 
 ## 🎨 Customization
 
 - Edit `src/lib/profileDetails.ts` to update your personal information
+- Edit `tailwind.config.js` to change colors to your liking.
 - Modify theme in `svelte.config.js` to change code highlighting style
 - Add your own blog posts in the `src/posts/` directory
+
+**_NOTE: make sure you follow this format for markdown posts._**
+
+```markdown
+---
+
+title: How do I use this template ?
+description: In this world it is important to have a portfolio and a blog whether you're student , working employee or retired superhuman.
+date: '2024-07-30'
+categories:
+
+- template
+- Open Source
+- svelte
+  published: true
+
+---
+```
 
 ## 🤝 Contributing
 
