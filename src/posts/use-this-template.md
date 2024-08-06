@@ -59,54 +59,54 @@ I built this portfolio template for myself and my friends to help everyone kicks
    export const Profession = 'Web Developer and OSS Contributor';
    export const Bio = `I'm a 20 y/o CS undergrad student. I love building things, playing games, and ricing my Arch Linux. Web development is my passion, and I live on the terminal. When I'm not coding, I'm probably losing my mind in Valorant or watching anime.`;
    export const Work = [
-    {
-     link: 'https://dcycle.design/',
-     position: 'Web Development Intern',
-     company: 'Dcycle Design Studio',
-     start_date: '06/2023',
-     end_date: '08/2023',
-     responsibilities: [
-      'Elevated organizational productivity by designing and implementing HTML/CSS templates for webpages.',
-      'Optimized user experience through enhancements in visual appeal and functionality.',
-      'Streamlined development processes, boosting efficiency by 50% for the design team.'
-     ]
-    }
+   	{
+   		link: 'https://dcycle.design/',
+   		position: 'Web Development Intern',
+   		company: 'Dcycle Design Studio',
+   		start_date: '06/2023',
+   		end_date: '08/2023',
+   		responsibilities: [
+   			'Elevated organizational productivity by designing and implementing HTML/CSS templates for webpages.',
+   			'Optimized user experience through enhancements in visual appeal and functionality.',
+   			'Streamlined development processes, boosting efficiency by 50% for the design team.'
+   		]
+   	}
    ];
    export const Projects = [
-    {
-     project: 'Chat-App',
-     details: [
-      'Built full-stack applications using Next.js 14, enhancing server-side rendering and front-end development.',
-      'Gained expertise in database management with Neon DB and Prisma, handling complex queries efficiently.',
-      'Implemented real-time communication with LiveKit, mastering socket connections and data synchronization.',
-      'Ensured secure authentication using Clerk, reinforcing user identity management and app security.'
-     ],
-     link: 'https://discord-clone-production-cc9a.up.railway.app/invite/e8e71148-aba9-42d2-99d5-8ab8c28acdc9'
-    },
-    {
-     project: 'Article Digester',
-     details: [
-      'Summarizes articles by extracting text from URLs, using Redux Toolkit, Vite with React, and Tailwind CSS.',
-      'Integrated Rapid API for processing and summarizing content, showcasing API integration skills.'
-     ],
-     link: 'https://articledigester.netlify.app/'
-    },
-    {
-     project: 'Slime-Link',
-     details: [
-      'Created an open-source alternative to Tree Link with Svelte and Firebase for dynamic interfaces.',
-      'Ensured responsive design for seamless usability across devices.'
-     ],
-     link: 'https://slime-link.vercel.app/'
-    }
+   	{
+   		project: 'Chat-App',
+   		details: [
+   			'Built full-stack applications using Next.js 14, enhancing server-side rendering and front-end development.',
+   			'Gained expertise in database management with Neon DB and Prisma, handling complex queries efficiently.',
+   			'Implemented real-time communication with LiveKit, mastering socket connections and data synchronization.',
+   			'Ensured secure authentication using Clerk, reinforcing user identity management and app security.'
+   		],
+   		link: 'https://discord-clone-production-cc9a.up.railway.app/invite/e8e71148-aba9-42d2-99d5-8ab8c28acdc9'
+   	},
+   	{
+   		project: 'Article Digester',
+   		details: [
+   			'Summarizes articles by extracting text from URLs, using Redux Toolkit, Vite with React, and Tailwind CSS.',
+   			'Integrated Rapid API for processing and summarizing content, showcasing API integration skills.'
+   		],
+   		link: 'https://articledigester.netlify.app/'
+   	},
+   	{
+   		project: 'Slime-Link',
+   		details: [
+   			'Created an open-source alternative to Tree Link with Svelte and Firebase for dynamic interfaces.',
+   			'Ensured responsive design for seamless usability across devices.'
+   		],
+   		link: 'https://slime-link.vercel.app/'
+   	}
    ];
    export const Links = [
-    { name: 'GitHub', url: 'https://github.com/aarsh21', icon: Github },
-    { name: 'Email', url: 'mailto:padiaaarsh@gmail.com', icon: Mail },
-    { name: 'Resume', url: 'https://your-resume-link.com', icon: FileText },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/aarshpadia21/', icon: Linkedin },
-    { name: 'Twitch', url: 'https://www.twitch.tv/weel3fps', icon: Twitch },
-    { name: 'YouTube', url: 'https://www.youtube.com/weel3fps', icon: Youtube }
+   	{ name: 'GitHub', url: 'https://github.com/aarsh21', icon: Github },
+   	{ name: 'Email', url: 'mailto:padiaaarsh@gmail.com', icon: Mail },
+   	{ name: 'Resume', url: 'https://your-resume-link.com', icon: FileText },
+   	{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/aarshpadia21/', icon: Linkedin },
+   	{ name: 'Twitch', url: 'https://www.twitch.tv/weel3fps', icon: Twitch },
+   	{ name: 'YouTube', url: 'https://www.youtube.com/weel3fps', icon: Youtube }
    ];
    ```
 
@@ -127,6 +127,24 @@ I built this portfolio template for myself and my friends to help everyone kicks
 6. **Clean Up the Posts Folder:**
 
    Remove all files from [src/posts/](https://github.com/aarsh21/catppuccin-folio/tree/main/src/posts).You can start writing blog with taking example of the following template too.
+
+**_NOTE: make sure you follow this format for markdown posts._**
+
+```markdown
+---
+
+title: How do I use this template ?
+description: In this world it is important to have a portfolio and a blog whether you're student , working employee or retired superhuman.
+date: '2024-07-30'
+categories:
+
+- template
+- Open Source
+- svelte
+  published: true
+
+---
+```
 
 ## How Do I Make This Template Entirely Mine?
 
