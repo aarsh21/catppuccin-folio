@@ -5,7 +5,7 @@ import rehypeSlug from 'rehype-slug';
 
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { bundledLanguages, createHighlighter } from 'shiki/bundle/web';
+import { createHighlighter } from 'shiki/bundle/web';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
@@ -17,9 +17,9 @@ const mdsvexOptions = {
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await createHighlighter({
 				themes: ['catppuccin-frappe'],
-				langs: [...Object.keys(bundledLanguages)]
+				langs: ['bash', 'html', 'css', 'typescript', 'javascript', 'svelte']
 			});
-			await highlighter.loadLanguage(...Object.keys(bundledLanguages));
+			await highlighter.loadLanguage('bash', 'html', 'css', 'typescript', 'javascript', 'svelte');
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'catppuccin-frappe' }));
 
 			return `{@html \`${html}\` }`;
