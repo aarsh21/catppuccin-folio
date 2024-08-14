@@ -1,4 +1,4 @@
-import profile from '$lib/images/profile.png';
+import profile from '$lib/images/profile.webp';
 import { Github, Mail, FileText, Linkedin, Twitch, Youtube, X } from 'lucide-svelte';
 
 export const profilePicture = profile;

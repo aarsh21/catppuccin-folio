@@ -14,6 +14,5 @@
 
 <div class="relative min-h-screen text-cat_text">
 	<slot></slot>
-
 	<Footer />
 </div>

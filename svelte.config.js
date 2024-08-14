@@ -5,7 +5,12 @@ import rehypeSlug from 'rehype-slug';
 
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { createHighlighter } from 'shiki/bundle/web';
+import { bundledLanguages, createHighlighter } from 'shiki/bundle/web';
+
+const highlighterPromise = createHighlighter({
+	themes: ['catppuccin-frappe'],
+	langs: Object.keys(bundledLanguages)
+});
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
@@ -15,19 +20,22 @@ const mdsvexOptions = {
 	},
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
-			const highlighter = await createHighlighter({
-				themes: ['catppuccin-frappe'],
-				langs: ['bash', 'html', 'css', 'typescript', 'javascript', 'svelte']
-			});
-			await highlighter.loadLanguage('bash', 'html', 'css', 'typescript', 'javascript', 'svelte');
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'catppuccin-frappe' }));
-
+			// Reuse the same highlighter instance
+			const highlighter = await highlighterPromise;
+			const html = escapeSvelte(
+				highlighter.codeToHtml(code, {
+					lang,
+					theme: 'catppuccin-frappe'
+				})
+			);
 			return `{@html \`${html}\` }`;
 		}
 	},
 	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
 	rehypePlugins: [rehypeSlug]
 };
+
+export { mdsvexOptions };
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

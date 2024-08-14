@@ -13,6 +13,7 @@ async function getPosts() {
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<Post, 'slug'>;
 			const post = { ...metadata, slug } satisfies Post;
+			// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 			post.published && posts.push(post);
 		}
 	}
