@@ -9,7 +9,7 @@ export const Location = 'Rajkot , Gujarat';
 
 export const Profession = 'Web Developer and OSS Contributor';
 
-export const Bio = `I'm a 20 y/o cs undergrad student. I love building things , playing games and ricing my Arch
+export const Bio = `I'm a 21 y/o cs undergrad student. I love building things , playing games and ricing my Arch
 	Linux. I enjoy web development and i live on the terminal. If I'm not coding, I'm probably losing
 	my mind in valorant or watching anime.`;
 

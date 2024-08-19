@@ -12,7 +12,7 @@
 	<link rel="icon" href={profilePicture} />
 </svelte:head>
 
-<div class="relative min-h-screen text-cat_text">
+<div class="relative w-full p-0 min-h-screen text-cat_text">
 	<slot></slot>
 	<Footer />
 </div>
