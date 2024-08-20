@@ -16,6 +16,6 @@
 	<BriefcaseBusinessIcon class=" h-6 w-6 text-cat_primary" />
 	<h1 class="text-md ml-3 font-semibold text-cat_secondary">{Profession}</h1>
 </div>
-<p class="text-md mt-2">
+<p class="text-md mb-3 mt-2">
 	{Bio}
 </p>

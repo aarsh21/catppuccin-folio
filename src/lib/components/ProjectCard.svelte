@@ -3,7 +3,7 @@
 	export let link: string, project: string, details: string[];
 </script>
 
-<Card.Root class="col-span-1 mt-2 sm:col-span-2">
+<Card.Root class="col-span-1 mt-4 lg:col-span-2">
 	<Card.Header class="pb-6">
 		<a target="_blank" href={link}>
 			<Card.Title>{project}</Card.Title>
