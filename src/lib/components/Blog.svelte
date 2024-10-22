@@ -1,7 +1,12 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
-	export let slug, date, description, title;
 	import { formatDate } from '$lib/utils';
+	let {
+		slug,
+		date,
+		description,
+		title
+	} = $props();
 </script>
 
 <Card.Root class=" m:col-span-2  mt-6">

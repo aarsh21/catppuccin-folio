@@ -4,8 +4,14 @@
 
 	type $$Props = HTMLAttributes<HTMLDivElement>;
 
-	let className: $$Props['class'] = undefined;
-	export { className as class };
+	interface Props {
+		class?: $$Props['class'];
+		children?: import('svelte').Snippet;
+		[key: string]: any
+	}
+
+	let { class: className = undefined, children, ...rest }: Props = $props();
+	
 </script>
 
 <div
@@ -13,7 +19,7 @@
 		'mx-auto  rounded-lg border border-cat_primary bg-cat_base text-cat_text shadow-sm transition-all  duration-100 ease-in-out hover:border-cat_quaternary',
 		className
 	)}
-	{...$$restProps}
+	{...rest}
 >
-	<slot />
+	{@render children?.()}
 </div>

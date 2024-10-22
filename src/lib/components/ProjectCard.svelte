@@ -1,6 +1,12 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
-	export let link: string, project: string, details: string[];
+	interface Props {
+		link: string;
+		project: string;
+		details: string[];
+	}
+
+	let { link, project, details }: Props = $props();
 </script>
 
 <Card.Root class="col-span-1 mt-4 lg:col-span-2">

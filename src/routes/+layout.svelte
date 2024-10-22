@@ -3,6 +3,11 @@
 	import { Name, profilePicture } from '$lib/profileDetails';
 	import { setupViewTransition } from 'sveltekit-view-transition';
 	import '../app.css';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	setupViewTransition();
 </script>
@@ -13,6 +18,6 @@
 </svelte:head>
 
 <div class="relative w-full p-0 min-h-screen text-cat_text">
-	<slot></slot>
+	{@render children?.()}
 	<Footer />
 </div>

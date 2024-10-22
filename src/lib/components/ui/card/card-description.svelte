@@ -4,10 +4,16 @@
 
 	type $$Props = HTMLAttributes<HTMLParagraphElement>;
 
-	let className: $$Props['class'] = undefined;
-	export { className as class };
+	interface Props {
+		class?: $$Props['class'];
+		children?: import('svelte').Snippet;
+		[key: string]: any
+	}
+
+	let { class: className = undefined, children, ...rest }: Props = $props();
+	
 </script>
 
-<p class={cn('text-md ', className)} {...$$restProps}>
-	<slot />
+<p class={cn('text-md ', className)} {...rest}>
+	{@render children?.()}
 </p>

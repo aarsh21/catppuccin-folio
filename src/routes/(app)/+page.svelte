@@ -2,7 +2,7 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import Main from '$lib/components/Main.svelte';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <Hero />

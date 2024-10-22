@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Blog from '$lib/components/Blog.svelte';
-	export let data;
+	let { data } = $props();
 </script>
 
 {#each data.posts as post}

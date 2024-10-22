@@ -1,11 +1,22 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
-	export let position: string,
-		company: string,
-		start_date: string,
-		end_date: string,
-		responsiblities: string[],
+	interface Props {
+		position: string;
+		company: string;
+		start_date: string;
+		end_date: string;
+		responsiblities: string[];
 		link: string;
+	}
+
+	let {
+		position,
+		company,
+		start_date,
+		end_date,
+		responsiblities,
+		link
+	}: Props = $props();
 </script>
 
 <Card.Root class="sm:col-span-2 ">

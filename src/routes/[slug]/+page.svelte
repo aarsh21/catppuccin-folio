@@ -2,7 +2,7 @@
 	import { formatDate } from '$lib/utils';
 	import { Badge } from '$lib/components/ui/badge';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -32,6 +32,6 @@
 	</div>
 
 	<div class="leading-7 lg:leading-normal">
-		<svelte:component this={data.content} />
+		<data.content />
 	</div>
 </article>
